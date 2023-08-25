@@ -10,7 +10,13 @@ WriteLine($"int uses {sizeof(int)} bytes and can store numbers in the range {int
 WriteLine($"double uses {sizeof(double)} bytes and can store numbers in the range {double.MinValue} to {double.MaxValue}.");
 WriteLine($"decimal uses {sizeof(decimal)} bytes and can store numbers in the range {decimal.MinValue} to {decimal.MaxValue}.");
 
-WriteLine("hi {1} {0}", "eee", 3);
+WriteLine();
+
+WriteLine("Press any key in keyboard:");
+ConsoleKeyInfo key = ReadKey();
+WriteLine();
+WriteLine("Key {0}, Char {1}, Modifiers {2}", key.Key, key.KeyChar, key.Modifiers);
+
 ReadKey();
 
 
