@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "version", "version\version.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Numbers", "Numbers\Numbers.csproj", "{9B34ABC9-971F-4DAA-8ED7-5473BFCAE219}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bit Logic", "Bit Logic\Bit Logic.csproj", "{9A6C3684-C72F-4E1D-84CB-3DC6CB028659}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bit Logic", "Bit Logic\Bit Logic.csproj", "{9A6C3684-C72F-4E1D-84CB-3DC6CB028659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinObjToString", "BinObjToString\BinObjToString.csproj", "{6099FC25-3F39-4481-A9C2-B2C799A32688}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9A6C3684-C72F-4E1D-84CB-3DC6CB028659}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A6C3684-C72F-4E1D-84CB-3DC6CB028659}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A6C3684-C72F-4E1D-84CB-3DC6CB028659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6099FC25-3F39-4481-A9C2-B2C799A32688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6099FC25-3F39-4481-A9C2-B2C799A32688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6099FC25-3F39-4481-A9C2-B2C799A32688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6099FC25-3F39-4481-A9C2-B2C799A32688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
