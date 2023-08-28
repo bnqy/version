@@ -32,5 +32,15 @@ try
 }
 catch (OverflowException)
 {
-    Write("Over Flow Exception");
+    WriteLine("Over Flow Exception");
+}
+
+unchecked
+{
+    int y = int.MaxValue + 1;
+    WriteLine($"Initial value: {y}");
+    y--;
+    WriteLine($"After decrementing: {y}");
+    y--;
+    WriteLine($"After decrementing: {y}");
 }
