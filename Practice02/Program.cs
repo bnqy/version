@@ -4,17 +4,28 @@ for(int i = 1; i <= 100; i++)
 {
     if (i % 3 == 0 && i % 5 == 0)
     {
-        Write("FizzBuzz ");
+        Write("FizzBuzz");
     }
     else if (i % 3 == 0)
     {
-        Write("Fizz ");
-        continue;
+        Write("Fizz");
     }
     else if (i % 5 == 0)
     {
-        Write("Buzz ");
+        Write("Buzz");
     }
     else
-        Write($"{i} ");
+    {
+        Write(i);
+    }
+
+    if(i < 100)
+    {
+        Write(", ");
+    }
+
+    if(i % 10 == 0)
+    {
+        WriteLine();
+    }
 }
