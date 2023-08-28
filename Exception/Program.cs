@@ -14,3 +14,12 @@ catch(Exception ex )
     WriteLine($"{ex.GetType()} says {ex.Message}");
 }
 WriteLine("After parsing");
+
+int x = int.MaxValue - 1;
+WriteLine($"int.MaxValue - 1 = {x}");
+x++;
+WriteLine($"int.MaxValue = {x}");
+x++;
+WriteLine($"int.MaxValue++ = {x}");
+x++;
+WriteLine($"int.MaxValue++ ++ = {x}");
