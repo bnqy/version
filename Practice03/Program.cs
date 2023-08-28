@@ -1,12 +1,21 @@
 ﻿using static System.Console;
 
-WriteLine("Input a number between 0 and 255: ");
+Write("Input a number between 0 and 255: ");
 string? firstStr = ReadLine();
 
-WriteLine("Input a number between 0 and 255: ");
+Write("Input a number between 0 and 255: ");
 string? secondStr = ReadLine();
 
-if (Int32.TryParse(firstStr, out int i) & Int32.TryParse(secondStr, out int j))
+try
 {
-    WriteLine($"{i}/{j} is {i/j}");
+    byte a = byte.Parse(firstStr);
+    byte b = byte.Parse(secondStr);
+
+    int answer = a / b;
+
+    WriteLine($"{a} divided by {b} is {answer}");
+}
+catch (Exception ex)
+{
+    WriteLine($"{ex.GetType().Name}: {ex.Message}");
 }
