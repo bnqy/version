@@ -3,6 +3,12 @@
 Table(9);
 WriteLine();
 Write(CardinalToOrdinal(123));
+WriteLine();
+AllCardToOrd(50);
+WriteLine();
+WriteLine($"Factorial of 7 is {Factorial(7)}");
+WriteLine();
+RunFactorials();
 
 static void Table(byte b)
 {
@@ -36,4 +42,44 @@ static string CardinalToOrdinal(int number)
             };
             return $"{number}{last}";
     }
+}
+
+static void AllCardToOrd(int quant)
+{
+    for(int i = 1; i <= quant; i++)
+    {
+        Write($"{CardinalToOrdinal(i)} ");
+    }
+    WriteLine();
+}
+
+static int Factorial(int n)
+{
+    if (n == 0 | n == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        checked
+        {
+            return n * Factorial(n - 1);
+        }
+    }
+}
+
+static void RunFactorials()
+{
+        for (int i = 1; i <= 15; i++)
+        {
+            try
+            {
+                WriteLine($"{i}! = {Factorial(i):N0}");
+            }
+            catch(Exception ex)
+            {
+                WriteLine($"{i}! --> {ex.GetType().Name}");
+            }
+
+        }
 }
