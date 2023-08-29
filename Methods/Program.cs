@@ -10,6 +10,8 @@ WriteLine($"Factorial of 7 is {Factorial(7)}");
 WriteLine();
 RunFactorials();
 
+
+
 static void Table(byte b)
 {
     WriteLine($"{b}'s time table:");
@@ -19,6 +21,10 @@ static void Table(byte b)
         WriteLine($"{b} x {b2} = {b * b2}");
     }
 }
+
+
+
+
 
 static string CardinalToOrdinal(int number)
 {
@@ -67,6 +73,8 @@ static int Factorial(int n)
         }
     }
 }
+
+
 
 static void RunFactorials()
 {
