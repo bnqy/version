@@ -1,6 +1,7 @@
 ﻿using static System.Console;
 using Class_Library_Shared;
 using Class_Library_Shared_Enum;
+using Class_Library_Bank_Acc;
 
 // Person dua = new Person();
 // var dua = new Person();
@@ -30,3 +31,24 @@ for (int i=0; i<dua.Children.Count;i++ )
 {
     WriteLine($" {dua.Children[i].Name} --> {dua.Children[i].DateOfBirth:dd MMMM yy},{dua.Children[i].LivingRegion} ");
 }
+
+
+BankAccount.InterestRate = 0.012M;
+
+BankAccount jane = new()
+{
+    AccountName = "Ms. Jane",
+    Balance = 2000M
+};
+
+BankAccount itoko = new BankAccount();
+itoko.AccountName = "Ms. Itoko";
+itoko.Balance = 1789M;
+
+WriteLine(
+    $"{jane.AccountName} -> {jane.Balance * BankAccount.InterestRate}"
+    );
+
+WriteLine(
+    $"{itoko.AccountName} -> {itoko.Balance * BankAccount.InterestRate}"
+    );
