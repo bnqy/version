@@ -19,6 +19,7 @@ static void Beta()
     {
         WriteLine($"Caught this: {ex.Message}");
 
-        throw new Exception(message: "Dua Lipa", innerException: ex);
+        throw;
+        //throw new Exception(message: "Dua Lipa", innerException: ex);
     }
 }
