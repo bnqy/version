@@ -113,3 +113,20 @@ WriteLine($"Deconst: {name1} - {dob1}");
 
 var (name2, dob2, la2) = dua;
 WriteLine($"Deconst: {name2} - {dob2} + {la2}");
+
+// parameters
+
+int a = 5;
+int b = 98;
+int c = 0;
+
+WriteLine($"Before: a = {a}; b = {b}; c = {c}");
+dua.Paremeters(a, ref b , out c, out int alpha);
+WriteLine($"After: a = {a}; b = {b}; c = {c}; alpha = {alpha}");
+
+
+// partial class Person
+
+WriteLine(dua.Greetings);
+WriteLine($"Age - {dua.Age}");
+WriteLine(dua.GetOrigin);

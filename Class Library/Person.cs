@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Class_Library_Shared
 {
-    public class Person : object
+    public partial class Person : object
     {
         public string Name;
         public DateTime DateOfBirth;
@@ -48,6 +48,19 @@ namespace Class_Library_Shared
             name = Name;
             dob = DateOfBirth;
             la = LivingRegion;
+        }
+
+
+        // parameters ref in out
+        public void Paremeters(int x, ref int y, out int z, out int alpha)
+        {
+            z = 999;
+            alpha = 0;
+
+            x++;
+            y++;
+            z++;
+            alpha++;
         }
     }
 }
