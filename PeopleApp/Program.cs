@@ -52,3 +52,30 @@ WriteLine(
 WriteLine(
     $"{itoko.AccountName} -> {itoko.Balance * BankAccount.InterestRate}"
     );
+
+WriteLine();
+
+WriteLine($"{Person.Type} --> {dua.Country}");
+//dua.Country = "j";
+
+
+WriteLine();
+
+Person unknown = new();
+
+WriteLine("{0} was created in {1} at {2:hh:mm:ss}, {2:dddd}",
+    unknown.Name,
+    unknown.Country,
+    unknown.RegistTime
+    );
+
+WriteLine(unknown.GetValues());
+(string, int) values = unknown.GetValues();
+
+WriteLine($"{values.Item1} {values.Item2}");
+
+var values2 = unknown.GetNamedValue();
+WriteLine($"{values2.name} {values2.age}");
+
+var thing = ("Kim", "Yoeng");
+WriteLine(thing.Item1);
