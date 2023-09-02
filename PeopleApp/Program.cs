@@ -71,6 +71,7 @@ WriteLine("{0} was created in {1} at {2:hh:mm:ss}, {2:dddd}",
 
 WriteLine(unknown.GetValues());
 (string, int) values = unknown.GetValues();
+(string name, int version) = unknown.GetValues();
 
 WriteLine($"{values.Item1} {values.Item2}");
 
@@ -79,3 +80,7 @@ WriteLine($"{values2.name} {values2.age}");
 
 var thing = ("Kim", "Yoeng");
 WriteLine(thing.Item1);
+
+(string name, int version) GetValuess = dua.GetValues();
+WriteLine(GetValuess.name);
+WriteLine($"Deconst {name} - {version}");
