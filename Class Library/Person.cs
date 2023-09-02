@@ -34,5 +34,20 @@ namespace Class_Library_Shared
         {
             return (name: "Sia", age: 51);
         }
+
+        // Deconstruct
+
+        public void Deconstruct(out string name, out DateTime dob)
+        {
+            name = Name;
+            dob = DateOfBirth;
+        }
+
+        public void Deconstruct(out string name, out DateTime dob, out SevenRegions la)
+        {
+            name = Name;
+            dob = DateOfBirth;
+            la = LivingRegion;
+        }
     }
 }

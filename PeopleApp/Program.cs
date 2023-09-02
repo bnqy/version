@@ -5,6 +5,8 @@ using Class_Library_Bank_Acc;
 
 // Person dua = new Person();
 // var dua = new Person();
+
+// Dua Instance
 Person dua = new();
 dua.Name = "Dua Lipa";
 dua.DateOfBirth = new DateTime(1995, 08, 22);
@@ -14,6 +16,8 @@ dua.Children.Add(new Person() { Name = "Austin", DateOfBirth = new DateTime(2015
 WriteLine(dua.ToString());
 WriteLine(format: "{0} was born in {1:dddd, d MMMM yyyy} and she lives in {2}!", dua.Name, dua.DateOfBirth, dua.LivingRegion);
 
+
+// Jaeden Instance
 Person jaeden = new()
 {
     Name = "Jaeden",
@@ -26,6 +30,8 @@ WriteLine(jaeden.Areas);
 
 WriteLine();
 
+
+// Dua
 WriteLine($"{dua.Name} has {dua.Children.Count} children:");
 for (int i=0; i<dua.Children.Count;i++ )
 {
@@ -33,21 +39,27 @@ for (int i=0; i<dua.Children.Count;i++ )
 }
 
 
+
+// Static member 
 BankAccount.InterestRate = 0.012M;
 
+// Jane
 BankAccount jane = new()
 {
     AccountName = "Ms. Jane",
     Balance = 2000M
 };
 
-BankAccount itoko = new BankAccount();
-itoko.AccountName = "Ms. Itoko";
-itoko.Balance = 1789M;
-
 WriteLine(
     $"{jane.AccountName} -> {jane.Balance * BankAccount.InterestRate}"
     );
+
+
+
+// Itoko
+BankAccount itoko = new BankAccount();
+itoko.AccountName = "Ms. Itoko";
+itoko.Balance = 1789M;
 
 WriteLine(
     $"{itoko.AccountName} -> {itoko.Balance * BankAccount.InterestRate}"
@@ -55,12 +67,16 @@ WriteLine(
 
 WriteLine();
 
+
+// Dua
 WriteLine($"{Person.Type} --> {dua.Country}");
 //dua.Country = "j";
 
 
 WriteLine();
 
+
+// Unkown
 Person unknown = new();
 
 WriteLine("{0} was created in {1} at {2:hh:mm:ss}, {2:dddd}",
@@ -71,16 +87,29 @@ WriteLine("{0} was created in {1} at {2:hh:mm:ss}, {2:dddd}",
 
 WriteLine(unknown.GetValues());
 (string, int) values = unknown.GetValues();
-(string name, int version) = unknown.GetValues();
-
 WriteLine($"{values.Item1} {values.Item2}");
+
+// deconst
+(string name, int version) = unknown.GetValues();
 
 var values2 = unknown.GetNamedValue();
 WriteLine($"{values2.name} {values2.age}");
 
+
+// Program class member
 var thing = ("Kim", "Yoeng");
 WriteLine(thing.Item1);
 
+// dua init
 (string name, int version) GetValuess = dua.GetValues();
 WriteLine(GetValuess.name);
 WriteLine($"Deconst {name} - {version}");
+
+
+// Deconst
+
+var(name1, dob1) = dua;
+WriteLine($"Deconst: {name1} - {dob1}");
+
+var (name2, dob2, la2) = dua;
+WriteLine($"Deconst: {name2} - {dob2} + {la2}");
