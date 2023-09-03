@@ -190,4 +190,20 @@ foreach (dynamic passenger in passengers)
 }
 
 ImmutablePerson anne = new ImmutablePerson {FirstName = "Anne", LastName = "Marie"};
-anne.FirstName = "Bebe";
+//anne.FirstName = "Bebe";
+
+// records
+ImmutableVihicle car = new ImmutableVihicle {Wheels = 4, Color = "Blue", Name = "Country Man"};
+
+ImmutableVihicle repairedCar = car with {Color = "Major Blue" };
+
+WriteLine();
+
+WriteLine($"Car name: {car.Name}, color: {car.Color}, wheels: {car.Wheels}");
+WriteLine("After repair:");
+WriteLine($"Car name: {repairedCar.Name}, color: {repairedCar.Color}, wheels: {repairedCar.Wheels}");
+
+WriteLine();
+
+ImmutableAnimal animal = new(2, "Hen");
+WriteLine($"Name: {animal.Name} | Feet: {animal.Feet}");
