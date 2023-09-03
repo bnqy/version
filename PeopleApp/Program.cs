@@ -130,3 +130,52 @@ WriteLine($"After: a = {a}; b = {b}; c = {c}; alpha = {alpha}");
 WriteLine(dua.Greetings);
 WriteLine($"Age - {dua.Age}");
 WriteLine(dua.GetOrigin);
+
+// Get Sets
+
+dua.favIceCream = "Hue Ope";
+WriteLine();
+WriteLine($"Dua's fac ice cream is {dua.favIceCream}");
+dua.FavPrimeColor = "blue";
+WriteLine($"Dua's fav color is {dua.FavPrimeColor}");
+
+object ob = "dua";
+WriteLine(((string)ob).Length);
+dynamic dn = "dua";
+WriteLine(dn.Length);
+
+WriteLine(dua[0].Name + " " + dua[1].LivingRegion);
+
+
+// Flight Patterns
+
+WriteLine(); WriteLine(); WriteLine(); WriteLine();
+
+dynamic[] passengers =
+{
+    new FirstClassPassengers{AirMiles = 1008},
+    new FirstClassPassengers{AirMiles = 6721},
+
+    new BusinessClassPassengers(),
+
+    new CoachClassPassengers{CarryOnKg = 12.32D},
+    new CoachClassPassengers{CarryOnKg = 9.12D}
+
+};
+
+foreach (dynamic passenger in passengers)
+{
+    decimal flightCost = passenger switch
+    {
+        FirstClassPassengers p when p.AirMiles > 3600 => 1200M,
+        FirstClassPassengers p when p.AirMiles > 1000 => 981M,
+        FirstClassPassengers _ => 789M,
+        BusinessClassPassengers _ => 1330M,
+        CoachClassPassengers p when p.CarryOnKg > 10.00D => 1000M,
+        CoachClassPassengers p when p.CarryOnKg > 5.0D => 675M,
+        CoachClassPassengers _ => 432M,
+        _ => 500M
+    } ;
+
+    WriteLine($"Flight cost is {flightCost:C} for {passenger}");
+}

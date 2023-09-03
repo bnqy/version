@@ -35,9 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackExceptionHandlingLib",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackExceptionHandlingApp", "StackExceptionHandlingApp\StackExceptionHandlingApp.csproj", "{B8471A27-52CF-4ED9-9C3A-BA2D79AE6BDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class Library", "Class Library\Class Library.csproj", "{A4D510FB-627A-431E-9820-34FF902895DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class Library", "Class Library\Class Library.csproj", "{A4D510FB-627A-431E-9820-34FF902895DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleApp", "PeopleApp\PeopleApp.csproj", "{819BF506-1235-401B-9796-4451FB6CF120}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleApp", "PeopleApp\PeopleApp.csproj", "{819BF506-1235-401B-9796-4451FB6CF120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryModern", "ClassLibraryModern\ClassLibraryModern.csproj", "{F6298441-87C6-4A7C-8B0D-F0DC9394D0F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{819BF506-1235-401B-9796-4451FB6CF120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{819BF506-1235-401B-9796-4451FB6CF120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{819BF506-1235-401B-9796-4451FB6CF120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6298441-87C6-4A7C-8B0D-F0DC9394D0F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6298441-87C6-4A7C-8B0D-F0DC9394D0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6298441-87C6-4A7C-8B0D-F0DC9394D0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6298441-87C6-4A7C-8B0D-F0DC9394D0F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

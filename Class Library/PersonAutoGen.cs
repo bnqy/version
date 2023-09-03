@@ -14,7 +14,8 @@ namespace Class_Library_Shared
         public string Greetings => $"Greetings from {Name}";
         public int Age => DateTime.Today.Year - DateOfBirth.Year;
 
-        public string favPrimeColor;
+        public string favIceCream { get;  set; }
+        private string favPrimeColor;
         public string FavPrimeColor
         {
             get
@@ -37,6 +38,12 @@ namespace Class_Library_Shared
                         "Choose from: red, green, blue.");
                 }
             }
+        }
+
+        public Person this[int index]
+        {
+            get { return Children[index]; }
+            set { Children[index] = value; }
         }
 
     }
