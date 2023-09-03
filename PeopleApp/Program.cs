@@ -188,3 +188,6 @@ foreach (dynamic passenger in passengers)
 
     WriteLine($"Flight cost is {flightCost:C} for {passenger}");
 }
+
+ImmutablePerson anne = new ImmutablePerson {FirstName = "Anne", LastName = "Marie"};
+anne.FirstName = "Bebe";
