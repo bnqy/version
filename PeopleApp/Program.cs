@@ -171,9 +171,18 @@ foreach (dynamic passenger in passengers)
         FirstClassPassengers p when p.AirMiles > 1000 => 981M,
         FirstClassPassengers _ => 789M,
         BusinessClassPassengers _ => 1330M,
-        CoachClassPassengers p when p.CarryOnKg > 10.00D => 1000M,
+
+        /*CoachClassPassengers p when p.CarryOnKg > 10.00D => 1000M,
         CoachClassPassengers p when p.CarryOnKg > 5.0D => 675M,
-        CoachClassPassengers _ => 432M,
+        CoachClassPassengers _ => 432M,*/
+
+        CoachClassPassengers p => p.CarryOnKg switch
+        {
+            > 10.00D => 1000M,
+            > 5.0D => 675M,
+            _ => 432M,
+        },
+
         _ => 500M
     } ;
 
