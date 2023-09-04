@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class Library", "Class Libr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleApp", "PeopleApp\PeopleApp.csproj", "{819BF506-1235-401B-9796-4451FB6CF120}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryModern", "ClassLibraryModern\ClassLibraryModern.csproj", "{F6298441-87C6-4A7C-8B0D-F0DC9394D0F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibraryModern", "ClassLibraryModern\ClassLibraryModern.csproj", "{F6298441-87C6-4A7C-8B0D-F0DC9394D0F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Altynchy Bolum", "Altynchy Bolum", "{AD8B02E2-D31D-4BDD-BD73-FC6FB8839130}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
