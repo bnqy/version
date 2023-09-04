@@ -23,4 +23,9 @@ public class Person
     {
         return BabyCreate(this, partner);
     }
+
+    public static Person operator * (Person p1, Person p2)
+    {
+        return Person.BabyCreate(p1, p2);
+    }
 }

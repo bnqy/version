@@ -9,6 +9,9 @@ stormi.Name = "Stormi";
 Person air = Person.BabyCreate(kylie, travis);
 air.Name = "Air";
 
+Person den = kylie * travis;
+den.Name = "Den";
+
 WriteLine($"Kylie has {kylie.Children.Count} children");
 WriteLine($"Travis has \"{travis.Children.Count}\" children");
 WriteLine("Their children:");
