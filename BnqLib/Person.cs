@@ -28,4 +28,32 @@ public class Person
     {
         return Person.BabyCreate(p1, p2);
     }
+
+    // delegate n event handling
+
+    /*
+     * delegate int DelegateWithMatchingSignature(string s);
+     * DelegateWithMatchingSignature d = new(p1.MethodIWantToCall);
+     * 
+     * public delegate void EventHandler(object? sender, EventArgs e);
+     * public delegate void EventHandler<TEventArgs>(object? sender, TEventArgs e);
+     * 
+     */
+    public EventHandler? Shout;
+
+    public int AngerLevel;
+
+    public void Poke()
+    {
+        AngerLevel++;
+
+        if (AngerLevel >= 3)
+        {
+            if (Shout != null)
+            {
+                Shout(this, EventArgs.Empty);
+            }
+        }
+    }
+
 }

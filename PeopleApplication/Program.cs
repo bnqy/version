@@ -19,3 +19,24 @@ foreach (var children in kylie.Children)
 {
     WriteLine($" {children.Name}");
 }
+
+//delegate
+
+static void Kylie_Shout(object? sender, EventArgs e)
+{
+    if (sender is null)
+    {
+        return;
+    }
+
+    Person person = (Person)sender;
+    WriteLine($"{person.Name} is this angry: {person.AngerLevel}");
+}
+
+// ===>
+
+kylie.Shout = Kylie_Shout;
+kylie.Poke();
+kylie.Poke();
+kylie.Poke();
+kylie.Poke();
