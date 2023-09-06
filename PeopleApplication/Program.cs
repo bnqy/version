@@ -65,3 +65,25 @@ lookupIntString.Add(4, "Four");
 int key1 = 4;
 WriteLine($"Key {key1} has value: {lookupIntString[key1]}");
 WriteLine();
+
+// Interfaces
+
+Person[] people =
+{
+    new Person() {Name = "Kris"},
+    new Person() {Name = "Khloe" },
+    new() {Name = "Kim"},
+    new() {Name = "Kendall"}
+};
+
+foreach (Person p in people)
+{
+    WriteLine($" {p.Name}");
+}
+
+Array.Sort(people);
+WriteLine("=> sorted");
+foreach (Person p in people)
+{
+    WriteLine($" {p.Name}");
+}

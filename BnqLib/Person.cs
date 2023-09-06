@@ -1,6 +1,6 @@
 ﻿namespace BnqLib;
 
-public class Person
+public class Person : IComparable<Person>
 {
     public string? Name;
     public DateTime DateOfBirth;
@@ -56,4 +56,14 @@ public class Person
         }
     }
 
+    // IComparable method
+    public int CompareTo(Person? other)
+    {
+        if (Name is null)
+        {
+            return 0;
+        }
+
+        return Name.CompareTo(other?.Name);
+    }
 }
