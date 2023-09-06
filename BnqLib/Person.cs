@@ -39,7 +39,7 @@ public class Person
      * public delegate void EventHandler<TEventArgs>(object? sender, TEventArgs e);
      * 
      */
-    public EventHandler? Shout;
+    public event EventHandler? Shout;
 
     public int AngerLevel;
 

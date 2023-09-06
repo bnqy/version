@@ -35,8 +35,20 @@ static void Kylie_Shout(object? sender, EventArgs e)
 
 // ===>
 
-kylie.Shout = Kylie_Shout;
+kylie.Shout += Kylie_Shout;
 kylie.Poke();
 kylie.Poke();
 kylie.Poke();
 kylie.Poke();
+
+// Non generics
+//System.Collections.Hashtable lookupObject = new();
+System.Collections.Hashtable lookupObject = new System.Collections.Hashtable();
+lookupObject.Add(1, "One");
+lookupObject.Add(2, "Two");
+lookupObject.Add(3, "Three");
+lookupObject.Add(kylie, "FourK");
+
+int key = 2;
+WriteLine($"Key {key} has value: {lookupObject[key]}");
+WriteLine($"Key {kylie} has value: {lookupObject[kylie]}");
