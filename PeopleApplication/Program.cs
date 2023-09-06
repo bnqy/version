@@ -19,6 +19,7 @@ foreach (var children in kylie.Children)
 {
     WriteLine($" {children.Name}");
 }
+WriteLine();
 
 //delegate
 
@@ -40,6 +41,7 @@ kylie.Poke();
 kylie.Poke();
 kylie.Poke();
 kylie.Poke();
+WriteLine();
 
 // Non generics
 //System.Collections.Hashtable lookupObject = new();
@@ -52,3 +54,14 @@ lookupObject.Add(kylie, "FourK");
 int key = 2;
 WriteLine($"Key {key} has value: {lookupObject[key]}");
 WriteLine($"Key {kylie} has value: {lookupObject[kylie]}");
+WriteLine();
+
+// Generics
+Dictionary<int, string> lookupIntString = new();
+lookupIntString.Add(1, "One");
+lookupIntString.Add(2, "Two");
+lookupIntString.Add(3, "Three");
+lookupIntString.Add(4, "Four");
+int key1 = 4;
+WriteLine($"Key {key1} has value: {lookupIntString[key1]}");
+WriteLine();
