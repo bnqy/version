@@ -95,3 +95,12 @@ foreach (Person p in people)
 {
     WriteLine($" {p.Name}");
 }
+WriteLine();
+
+// Structs Value Types
+
+DisplaceVectors d1 = new(-1, 3);
+DisplaceVectors d2 = new DisplaceVectors(0, -3);
+DisplaceVectors d3 = d1 + d2;
+
+WriteLine($"({d1.X}, {d1.Y}) + ({d2.X}, {d2.Y}) = ({d3.X}, {d3.Y})");
