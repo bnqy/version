@@ -113,3 +113,7 @@ WriteLine(employee.Name);
 employee.EmployeeCode = "SW0981";
 WriteLine(employee.EmployeeCode);
 employee.WriteTo();
+WriteLine();
+
+// override
+WriteLine(employee.ToString());
