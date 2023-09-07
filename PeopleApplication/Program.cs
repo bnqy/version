@@ -104,3 +104,12 @@ DisplaceVectors d2 = new DisplaceVectors(0, -3);
 DisplaceVectors d3 = d1 + d2;
 
 WriteLine($"({d1.X}, {d1.Y}) + ({d2.X}, {d2.Y}) = ({d3.X}, {d3.Y})");
+WriteLine();
+
+// Inheritance
+
+Employee employee = new() {Name = "Finn"};
+WriteLine(employee.Name);
+employee.EmployeeCode = "SW0981";
+WriteLine(employee.EmployeeCode);
+employee.WriteTo();

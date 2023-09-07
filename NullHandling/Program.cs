@@ -7,7 +7,7 @@ address.City = "Bishkek";
 address.Building = null;
 address.Street = "Manas";
 
-string? s = null;
+string s = null;
 int? y = s?.Length;
 
 int thisCanNotBeNull = 9;

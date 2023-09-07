@@ -1,4 +1,5 @@
 ﻿namespace BnqLib;
+using static System.Console;
 
 public class Person : IComparable<Person>
 {
@@ -27,6 +28,11 @@ public class Person : IComparable<Person>
     public static Person operator * (Person p1, Person p2)
     {
         return Person.BabyCreate(p1, p2);
+    }
+
+    public void WriteTo()
+    {
+        WriteLine($"{Name}");
     }
 
     // delegate n event handling
