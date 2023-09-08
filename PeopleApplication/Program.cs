@@ -168,3 +168,10 @@ catch(PersonException ex)
 {
     WriteLine(ex.Message);
 }
+WriteLine();
+
+string email1 = "dualipa@gmail.com";
+string email2 = "gf3&lls.ejke.de";
+
+WriteLine($"Is {email1} valid email: {email1.IsValidEmail()}");
+WriteLine($"Is {email2} valid email: {email2.IsValidEmail()}");
