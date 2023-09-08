@@ -4,6 +4,7 @@ using static System.Console;
 Person kylie = new Person() {Name = "Kylie" };
 Person travis = new() { Name = "Travis" };
 Person stormi = kylie.BabyCreateWith(travis);
+kylie.DateOfBirth = new DateTime(1995, 01, 12);
 //WriteLine(strormi.Name);
 stormi.Name = "Stormi";
 Person air = Person.BabyCreate(kylie, travis);
@@ -153,4 +154,17 @@ Employee? adiASEmployee = adiletInPerson as Employee;
 if (adiASEmployee is not null)
 {
     WriteLine($"{nameof(adiletInEmployee)} \"as\" an Employee");
+}
+WriteLine();
+
+// Exception Inhereit
+
+try
+{
+    kylie.TimeTravel(new(1996, 12, 23));
+    kylie.TimeTravel(new(1994, 12, 23));
+}
+catch(PersonException ex)
+{
+    WriteLine(ex.Message);
 }
