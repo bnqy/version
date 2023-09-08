@@ -12,8 +12,8 @@ public class Employee : Person
         WriteLine($"{Name} was hired with {EmployeeCode}");
     }
 
-    /*public override string ToString()
+    public override string ToString()
     {
         return $"{EmployeeCode} is a {base.ToString()}";
-    }*/
+    }
 }

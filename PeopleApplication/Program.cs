@@ -117,3 +117,40 @@ WriteLine();
 
 // override
 WriteLine(employee.ToString());
+WriteLine();
+
+// Prived in preobr
+
+Employee adiletInEmployee = new Employee { EmployeeCode = "EE92018", Name = "Adilet" };
+Person adiletInPerson = adiletInEmployee;
+adiletInEmployee.WriteTo();
+adiletInPerson.WriteTo();
+WriteLine(adiletInPerson.ToString());
+WriteLine(adiletInEmployee.ToString());
+WriteLine();
+
+
+// privid Exception Handling with IS
+//Employee explicitAdilet = (Employee)adiletInPerson;
+
+if (adiletInPerson is Employee)
+{
+    WriteLine($"{nameof(adiletInPerson)} \"is\" an Employee");
+    Employee explicitAdilet = (Employee)adiletInPerson;
+}
+
+// or
+
+if (adiletInPerson is Employee explicitAdi)
+{
+    WriteLine($"{nameof(adiletInPerson)} \"is\" an Employee");
+}
+WriteLine();
+
+// with AS
+
+Employee? adiASEmployee = adiletInPerson as Employee;
+if (adiASEmployee is not null)
+{
+    WriteLine($"{nameof(adiletInEmployee)} \"as\" an Employee");
+}
