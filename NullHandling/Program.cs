@@ -1,5 +1,5 @@
 ﻿using static System.Console;
-//#nullable disable
+// #nullable disable
 
 Address address = new Address();
 address.Region = "Zhal";

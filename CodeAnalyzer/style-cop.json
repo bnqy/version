@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+
+  "settings": {
+    "orderingRules": {
+      "usingDirectivesPlacement": "preserve"
+    },
+    "documentationRules": {
+      "companyName": "BnqLib",
+      "copyrightText": "Copyright (c) BnqLib. All rights reserved."
+    }
+  }
+
+}

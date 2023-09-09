@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BnqLib", "BnqLib\BnqLib.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleApplication", "PeopleApplication\PeopleApplication.csproj", "{05B11441-F258-4976-BCCA-57777514ADB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullHandling", "NullHandling\NullHandling.csproj", "{9647F180-650C-47EC-8F3E-D7DF2F054190}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullHandling", "NullHandling\NullHandling.csproj", "{9647F180-650C-47EC-8F3E-D7DF2F054190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAnalyzer", "CodeAnalyzer\CodeAnalyzer.csproj", "{5D916E59-3C14-42CB-83A0-50B22C7200A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +145,10 @@ Global
 		{9647F180-650C-47EC-8F3E-D7DF2F054190}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9647F180-650C-47EC-8F3E-D7DF2F054190}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9647F180-650C-47EC-8F3E-D7DF2F054190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D916E59-3C14-42CB-83A0-50B22C7200A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D916E59-3C14-42CB-83A0-50B22C7200A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D916E59-3C14-42CB-83A0-50B22C7200A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D916E59-3C14-42CB-83A0-50B22C7200A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -151,6 +157,7 @@ Global
 		{5AC65169-8C69-4DEB-96B3-338C4C6F1A86} = {AD8B02E2-D31D-4BDD-BD73-FC6FB8839130}
 		{05B11441-F258-4976-BCCA-57777514ADB6} = {AD8B02E2-D31D-4BDD-BD73-FC6FB8839130}
 		{9647F180-650C-47EC-8F3E-D7DF2F054190} = {AD8B02E2-D31D-4BDD-BD73-FC6FB8839130}
+		{5D916E59-3C14-42CB-83A0-50B22C7200A6} = {AD8B02E2-D31D-4BDD-BD73-FC6FB8839130}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7996603D-F939-4301-B0D0-5693B0FAF453}
